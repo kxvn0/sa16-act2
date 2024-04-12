@@ -1,0 +1,31 @@
+<!-- app/views/pages/contact.html.erb -->
+
+<div class="container">
+  <h1>Contact Me</h1>
+  <p>Feel free to reach out to me using the following. I will respond within 24-48 hours once I recieve the message. You can also submit a contact form and I will also respond within 24-48 hours as well.</p>
+
+  <h2>Contact Information</h2>
+  <p>Email: <%= @email %></p>
+  <p>Phone: <%= @phone_num %></p>
+
+  <h2>Social Media</h2>
+  <ul>
+    <% @social_media.each do |platform, link| %>
+      <li><%= link_to platform.to_s.capitalize, link %></li>
+    <% end %>
+  </ul>
+
+  <%= form_for :message, url: pages_contact_path do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+
+    <%= f.label :message %>
+    <%= f.text_area :message %>
+
+    <%= f.submit "Send Message", class: "btn btn-primary" %>
+  <% end %>
+  -->
+</div>

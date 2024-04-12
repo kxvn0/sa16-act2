@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>My Work</h1>
+
+  <div class="row">
+    <% @projects.each do |project| %>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <%= image_tag project.image, class: "card-img-top", alt: project.title %>
+          <div class="card-body">
+            <h5 class="card-title"><%= project.title %></h5>
+            <p class="card-text"><%= project.description %></p>
+            <p class="card-text">Technologies: <%= project.technologies %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
