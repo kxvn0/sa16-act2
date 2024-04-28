@@ -1,0 +1,42 @@
+
+body {
+  background-color: #000000; 
+  color: #FF0000; 
+  font-family: Arial, sans-serif; 
+}
+
+h1, h2, h3 {
+  color: #FF0000; 
+  text-shadow: 1px 1px 1px #000000; 
+}
+
+a {
+  color: #FF0000; 
+  text-decoration: underline; 
+}
+
+button {
+  background-color: #FF0000;
+  color: #000000; 
+  border: 2px solid #000000; 
+  font-weight: bold; 
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.card {
+  background-color: transparent; 
+  color: #FF0000; 
+  box-shadow: 0px 0px 10px #000000; 
+}
+
+
+.container {
+  text-align: center; 
+}
+
+img {
+  max-width: 50%; 
+  height: auto; 
+  display: inline-block; 
+}
